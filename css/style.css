@@ -81,28 +81,25 @@ h2 {
 	font-size: 1.9rem;
 	line-height: 2.3rem;
 	text-align: center;
-	margin-top: 4rem;
 }
 .price__subtitle {
 	font-weight: 600;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	text-align: center;
-	margin-top: 1rem;
+	padding-top: 1rem;
 }
 .price__columns {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
-	padding-top: 3rem;
+	padding: 3rem 2rem 0;
 }
-.price__column,
-.price__column-one,
-.price__column-two {
-	/* width: 26rem; */
+.price__column {
 	max-width: 26rem;
-	height: 36rem;
+	width: 100%;
+	padding: 2rem 2rem;
 	border: 1px solid var(--grey);
 	text-align: center;
 }
@@ -134,8 +131,18 @@ h2 {
 	line-height: 2.3rem;
 }
 .price__button {
-	margin-left: 5.2rem;
-	margin-right: 5.2rem;
+	/* margin-left: 5.2rem;
+	margin-right: 5.2rem; */
+	/* width: 100%; */
+	max-width: 15.6rem;
+	width: 100%;
+	padding: 0.75rem 0;
+	background-color: var(--yellow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 3rem;
 }
 .price__button span {
 	font-weight: 500;
@@ -144,15 +151,6 @@ h2 {
 	text-align: center;
 }
 .price__button-first {
-	margin-top: 3rem;
-	width: 15.6rem;
-	height: 3.2rem;
-	background-color: var(--yellow);
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
 }
 .price__button-first:hover {
 	color: var(--white);
@@ -167,9 +165,9 @@ h2 {
 		padding-top: 1rem;
 	}
 	.price__columns {
+		padding: 0 3rem;
 		display: block;
 		flex-wrap: wrap;
-		padding: 0 2rem;
 	}
 	.price__column {
 		margin: 1rem auto;
@@ -185,8 +183,10 @@ h2 {
 		display: flex;
 		justify-content: center;
 	}
-	.price__column-one,
-	.price__column-two {
+	.price__column:nth-child(2) {
+		display: none;
+	}
+	.price__column:last-child {
 		display: none;
 	}
 }
