@@ -38,6 +38,9 @@ h2 {
 	font-size: 1.25rem;
 	line-height: 1.5rem;
 }
+.item__img {
+	display: none;
+}
 .item__info-info {
 	padding-top: 1.4rem;
 	padding-bottom: 2rem;
@@ -64,6 +67,8 @@ h2 {
 	}
 	.item__info-title {
 		padding-bottom: 1rem;
+		width: 11.75rem;
+		width: auto;
 	}
 	.item__info-info {
 		display: none;
@@ -71,8 +76,14 @@ h2 {
 	.item__info-infotwo {
 		display: none;
 	}
+	.item__info {
+		display: flex;
+		flex-direction: row;
+	}
+	.item__img {
+		display: block;
+	}
 }
-
 /*-----------*/
 .price {
 }
@@ -150,12 +161,13 @@ h2 {
 	line-height: 1.5rem;
 	text-align: center;
 }
-.price__button-first {
-}
-.price__button-first:hover {
-	color: var(--white);
+.price__button:hover .price__button-first,
+.price__button:hover {
 	box-shadow: 1px 4px 7px 5px var(--yellow);
+	color: var(--white);
+	cursor: pointer;
 }
+
 .price__order {
 	display: none;
 }
@@ -208,6 +220,7 @@ h2 {
 }
 /*--*/
 .cars {
+	padding: 2rem 0;
 }
 .cars__title {
 	font-weight: 600;
@@ -248,6 +261,19 @@ h2 {
 .cars__but:hover {
 	border: 1px solid var(--yellow);
 }
+.car__container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.img__left {
+	padding: 0 6rem 0 0;
+}
+.img__right {
+	padding: 0 0 0 6rem;
+}
 .cars__cars {
 }
 .cars__car {
@@ -257,11 +283,20 @@ h2 {
 	padding-top: 3rem;
 	gap: 5rem;
 }
+.cars__car:nth-child(2) {
+	display: none;
+}
+.cars__car:last-child {
+	display: none;
+}
 .car__text-title {
-	padding-top: 3rem;
+	padding-top: 2rem;
 	font-weight: 600;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
+}
+.car__text-title span {
+	display: none;
 }
 .car__text-text {
 	font-weight: 400;
@@ -271,6 +306,17 @@ h2 {
 .car__text-text img {
 	padding: 0 1rem 0 0;
 }
+.car__button {
+	max-width: 15.6rem;
+	width: 100%;
+	padding: 0.75rem 0;
+	background-color: var(--yellow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
 .car__img {
 	max-width: 45rem;
 	width: 100%;
@@ -278,4 +324,181 @@ h2 {
 .car__img img {
 	width: 100%;
 	height: 100%;
+}
+@media (max-width: 1238px) {
+	.img__left,
+	.img__right {
+		display: none;
+	}
+	.cars__but {
+		border: 0;
+	}
+	.cars__but:hover {
+		border: 0 solid var(--white);
+	}
+	.cars__but span:hover {
+		text-decoration: underline;
+		text-decoration-color: var(--yellow);
+		color: var(--black);
+		font-weight: 500;
+	}
+	.cars__car {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 0rem;
+	}
+	.car__text-title {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+	}
+	.car__text-title span {
+		display: block;
+	}
+	.car__text-text {
+		display: none;
+	}
+	.car__img {
+		width: auto;
+	}
+}
+@media (max-width: 365px) {
+	.car__button {
+		width: 17rem;
+		margin-top: 2rem;
+	}
+	.cars__title {
+		font-size: 1.25rem;
+		margin-bottom: -1rem;
+	}
+	.cars__subtitle {
+		font-size: 1rem;
+		line-height: 90%;
+	}
+	.cars__but span {
+		font-size: 0.8rem;
+	}
+	.car__text-title {
+		font-size: 0.75rem;
+	}
+}
+/*-----*/
+.mans {
+	max-height: 41.5rem;
+	height: 100%;
+	background-color: var(--yellow);
+	padding: 1.5rem 0;
+}
+.man__title {
+	font-size: 1.9rem;
+	font-weight: 600;
+	line-height: 2.1rem;
+	text-align: center;
+	padding: 2rem 0;
+}
+.mans__talk {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding: 2rem 2rem 0;
+}
+.man__speech-name {
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	text-align: left;
+}
+.man__speech-datarating {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+/*----RAITING-----*/
+.simple__rating {
+	position: relative;
+	display: inline-block;
+}
+.simple__rating::before {
+	content: "★★★★★";
+	display: block;
+	color: var(--red);
+}
+.simple-rating__items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	overflow: hidden;
+}
+.simple-rating__item {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+}
+.simple-rating__label {
+	flex: 0 0 20%;
+	height: 100%;
+	cursor: pointer;
+	color: var(--red);
+}
+.simple-rating__label::before {
+	content: "★";
+	display: block;
+	transition: color 0.3s ease 0s;
+}
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label {
+	color: #870000;
+}
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+	color: #b80707;
+}
+.man__speech-datarating {
+	padding-top: 1rem;
+}
+.speech__text {
+	max-width: 26rem;
+	padding-top: 1rem;
+}
+.mans__span {
+	display: block;
+	padding-top: 1rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	text-decoration: underline;
+}
+.mans__button {
+	max-width: 15.6rem;
+	width: 100%;
+	padding: 0.75rem 0;
+	border: 1px solid var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+.mans__button-first {
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+@media (max-width: 700px) {
+	.man__speech:nth-child(1) {
+		display: none;
+	}
+	.man__speech:last-child {
+		display: none;
+	}
 }
