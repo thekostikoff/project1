@@ -7,7 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleble=0">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/baner.css">
+	<link rel="stylesheet" href="./css/input.css">
+	<link rel="stylesheet" href="./js/mine.js">
 	<title>MOVEE</title>
+
 </head>
 
 <body>
@@ -228,20 +232,15 @@
 					<div class="speech__rating">
 						<div class="simple__rating">
 							<div class="simple-rating__items">
-								<input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple__rating"
-									value="5">
+								<input id="simple-rating__5" type="checkbox" class="simple-rating__item" name="five" value="5">
 								<label for="simple-rating__5" class="simple-rating__label"></label>
-								<input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple__rating"
-									value="4">
+								<input id="simple-rating__4" type="checkbox" class="simple-rating__item" name="five" value="4">
 								<label for="simple-rating__4" class="simple-rating__label"></label>
-								<input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple__rating"
-									value="4">
+								<input id="simple-rating__4" type="checkbox" class="simple-rating__item" name="five" value="4">
 								<label for="simple-rating__3" class="simple-rating__label"></label>
-								<input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple__rating"
-									value="2">
+								<input id="simple-rating__2" type="checkbox" class="simple-rating__item" name="five" value="2">
 								<label for="simple-rating__2" class="simple-rating__label"></label>
-								<input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple__rating"
-									value="1">
+								<input id="simple-rating__1" type="checkbox" class="simple-rating__item" name="five" value="1">
 								<label for="simple-rating__1" class="simple-rating__label"></label>
 							</div>
 						</div>
@@ -288,10 +287,91 @@
 					Александру за его... </p>
 				<span class="mans__span">Читать полностью</span>
 			</div>
-
 		</div>
 		<div class="mans__button"><a href="#" class="mans__button-first">Все отзывы</a></div>
 	</section>
+	<section class="input">
+		<div class="input__title">Закажи переезд прямо сейчас со скидкой %</div>
+		<div class="input__text">Мы перезвоним в течении 10 секунд</div>
+		<div class="user__tel">
+			<div class="enter__text"><input class="username" placeholder="Ваше имя" type="text" name="username" value="">
+			</div>
+			<div class="enter__text"><input class="telephone" placeholder="Телефон" type="text" name="telephone" value="">
+			</div>
+		</div>
+		<div class="town">
+			<div class="town__district">
+				<div class="town__text">Укажите область</div>
+				<select class="input__district" name="district" placeholder="Например:Минская">
+					<option value="minskaya">Минская</option>
+					<option value="Mogilevskaya">Могилевская</option>
+				</select>
+			</div>
+			<div class="town__city">
+				<div class="town__text">Укажите город</div>
+				<select class="input__city" name="city" placeholder="">
+					<option value="Mozyr">Мозырь</option>
+					<option value="Mogilev">Могилев</option>
+				</select>
+			</div>
+		</div>
+		<div class="pay__title">Способ оплаты</div>
+		<div class="pay__choose">
+			<div class="radio">
+				<input class="pay__input" type="radio" name="nal" id="answer1" value="cash">
+				<label class="radio__label" for="answer1">Наличными курьеру</label>
+			</div>
+			<div class="radio">
+				<input class="pay__input" type="radio" name="nal" id="answer2" value="card">
+				<label class="radio__label" for="answer2">Картой курьеру</label>
+			</div>
+			<div class="radio">
+				<input class="pay__input" type="radio" name="nal" id="answer3" value="payment">
+				<label class="radio__label" for="answer3">Банковский перевод</label>
+			</div>
+		</div>
+
+		<div class="service">
+			<div class="serv__two">
+				<div class="service__title">Дополнительные услуги</div>
+				<div class="service__img"><img src="./img/text/VV.png" alt="#"></div>
+			</div>
+			<div class="service__sel">
+				<div class="checkbox">
+					<input class="checkbox__input" type="checkbox" id="checkbox_1">
+					<label class="checkbox__label" for="checkbox_1">Вызов замерщика</label>
+				</div>
+				<div class="checkbox">
+					<input class="checkbox__input" type="checkbox" id="checkbox_2">
+					<label class="checkbox__label" for="checkbox_2">Упаковка для хрупких предметов</label>
+				</div>
+				<div class="checkbox">
+					<input class="checkbox__input" type="checkbox" id="checkbox_3">
+					<label class="checkbox__label" for="checkbox_3">Кран</label>
+				</div>
+				<div class="checkbox">
+					<input class="checkbox__input" type="checkbox" id="checkbox_4">
+					<label class="checkbox__label" for="checkbox_4">Сборка мебели </label>
+				</div>
+				<div class="checkbox">
+					<input class="checkbox__input" type="checkbox" id="checkbox_5">
+					<label class="checkbox__label" for="checkbox_5">Крупногабаритные предметы</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="clock">
+			<div class="clock__clock" id="clocks">05:37:25</div>
+			<div class="clock__buttons">
+				<div><a href="#" class="clock__button">Заказать</a></div>
+				<div class="clock__shadow"></div>
+				<div class="clock__input"><input type="checkbox"><span class="clock__text">Даю согласие на обработку
+						данных</span></div>
+			</div>
+		</div>
+
+	</section>
+
 
 
 </body>
