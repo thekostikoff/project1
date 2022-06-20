@@ -1,0 +1,287 @@
+.input {
+	max-width: 47rem;
+	width: 100%;
+	margin: 0 auto;
+}
+.input__title {
+	font-weight: 600;
+	font-size: 1.9rem;
+	line-height: 2.3rem;
+	padding-top: 7rem;
+	text-align: center;
+}
+.input__text {
+	font-weight: 400;
+	line-height: 1.3rem;
+	text-align: center;
+	margin-left: -25rem;
+	padding-top: 1rem;
+}
+.user__tel {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-left: -1rem;
+	padding-top: 2rem;
+	gap: 4.5rem;
+}
+.username,
+.telephone {
+	border: 0;
+	outline: 0;
+	width: 19rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+}
+.enter__text {
+	font-weight: 500;
+	line-height: 1.25rem;
+	border-bottom: 2px solid black;
+	padding-bottom: 0.8rem;
+}
+.town {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 2rem;
+}
+.town__district,
+.town__city {
+	border-bottom: 2px solid black;
+	width: 19rem;
+	margin: 0 auto;
+}
+.town__text {
+	padding: 1.5rem 0;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+.input__district,
+.input__city {
+	border: 0;
+	outline: 0;
+	padding-bottom: 1rem;
+	width: 19rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+}
+.city__text {
+	font-weight: 900;
+	line-height: 1.25rem;
+}
+.pay__title {
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	text-align: center;
+	margin: 2rem 0 2rem -33rem;
+}
+.pay__choose {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 2.5rem;
+	gap: 2rem;
+}
+.pay__input {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+.pay__choose label {
+	margin-left: -0.5rem;
+}
+.radio {
+	position: relative;
+	padding-right: 0.5rem;
+}
+.pay__input {
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+.radio__label {
+	padding-left: 1.5rem;
+	font-size: 1rem;
+	color: #444;
+	cursor: pointer;
+}
+.radio__label:before {
+	content: "";
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border: 2px solid rgba(51, 51, 51, 0.4);
+	background-color: #f8f8f8;
+	border-radius: 50%;
+	position: absolute;
+	top: -3px;
+	left: -1rem;
+	z-index: 1;
+}
+.radio__label::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: var(--yellow);
+	border-radius: 50%;
+	opacity: 0;
+	position: absolute;
+	top: 1px;
+	left: -0.75rem;
+	z-index: 2;
+}
+.pay__input:checked + .radio__label:before {
+	border-color: var(--yellow);
+}
+.pay__input:checked + .radio__label:after {
+	opacity: 1;
+}
+
+.serv__two {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2rem 24.7rem 0 0;
+	gap: 1rem;
+}
+.service__title {
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+.service__sel {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding-top: 2rem;
+	padding-left: 1.5rem;
+}
+.checkbox {
+	position: relative;
+}
+.checkbox__input {
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+.checkbox__label {
+	padding-left: 2rem;
+	font-size: 1rem;
+	color: #444;
+}
+.checkbox__label:before {
+	content: "";
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #f8f8f8;
+	border: 2px solid rgba(51, 51, 51, 0.4);
+	border-radius: 2px;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	z-index: 1;
+}
+.checkbox__label:after {
+	content: "";
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: url("../img/input/VV2.svg") no-repeat;
+	background-size: 0.75rem 0.5rem;
+	opacity: 0;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.5rem;
+	z-index: 2;
+}
+.checkbox__input:checked + .checkbox__label:before {
+	background-color: #ffffff;
+	border-color: var(--yellow);
+}
+.checkbox__input:checked + .checkbox__label:after {
+	opacity: 1;
+}
+/*---*/
+.clock {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5rem;
+}
+.clock__clock {
+	color: black;
+	margin-top: 3rem;
+	font-weight: 400;
+	font-size: 5rem;
+}
+.clock__buttons {
+	height: 7.8rem;
+}
+.clock__button {
+	margin-top: 2.5rem;
+	padding: 1rem 6rem;
+	background-color: var(--red);
+	color: var(--white);
+	font-size: 1.5rem;
+	width: 19rem;
+	height: 3.75rem;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+.clock__button:hover {
+	color: var(--white);
+	background-color: var(--orange2);
+}
+.clock__shadow {
+	border: 2px solid var(--yellow);
+	width: 19rem;
+	height: 3.75rem;
+	position: relative;
+	top: -3rem;
+	left: 0.5rem;
+	z-index: 1;
+}
+.clock__input {
+	display: block;
+	position: relative;
+	top: -2rem;
+	left: 0;
+	z-index: 1;
+}
+.clock__input span {
+	padding-left: 0.6rem;
+}
+@media (max-width: 800px) {
+	.input {
+		margin: 0 2.5rem 3rem 0rem;
+	}
+	.input__title span {
+		display: none;
+	}
+	.input__title {
+		max-width: 25rem;
+		margin: 0 auto;
+	}
+	.input__text {
+		margin: 0 auto;
+	}
+	.clock__clock {
+		display: none;
+	}
+}
+@media (max-width: 720px) {
+	.user__tel {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.town,
+	.pay__title,
+	.pay__choose,
+	.service {
+		display: none;
+	}
+}
