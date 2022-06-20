@@ -166,7 +166,7 @@
 }
 /*-----*/
 .mans {
-	max-height: 41.5rem;
+	max-height: 44rem;
 	height: 100%;
 	background-color: var(--yellow);
 	padding: 1.5rem 0;
@@ -259,6 +259,9 @@
 	line-height: 1.5rem;
 	text-decoration: underline;
 }
+.mans__span:hover {
+	cursor: pointer;
+}
 .mans__button {
 	max-width: 15.6rem;
 	width: 100%;
@@ -270,10 +273,18 @@
 	margin: 0 auto;
 	margin-top: 3rem;
 }
+.mans__button:hover {
+	cursor: pointer;
+}
 .mans__button-first {
 	font-weight: 500;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
+}
+@media (max-width: 780px) {
+	.mans__button {
+		margin-top: 1.5rem;
+	}
 }
 @media (max-width: 700px) {
 	.man__speech:nth-child(1) {

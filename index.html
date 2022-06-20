@@ -291,32 +291,32 @@
 		<div class="mans__button"><a href="#" class="mans__button-first">Все отзывы</a></div>
 	</section>
 	<section class="input">
-		<div class="input__title">Закажи переезд прямо сейчас со скидкой %</div>
+		<div class="input__title">Закажи переезд прямо сейчас<span> со скидкой %</span></div>
 		<div class="input__text">Мы перезвоним в течении 10 секунд</div>
-		<div class="user__tel">
+		<form class="user__tel">
 			<div class="enter__text"><input class="username" placeholder="Ваше имя" type="text" name="username" value="">
 			</div>
 			<div class="enter__text"><input class="telephone" placeholder="Телефон" type="text" name="telephone" value="">
 			</div>
-		</div>
+		</form>
 		<div class="town">
-			<div class="town__district">
+			<form class="town__district">
 				<div class="town__text">Укажите область</div>
 				<select class="input__district" name="district" placeholder="Например:Минская">
 					<option value="minskaya">Минская</option>
 					<option value="Mogilevskaya">Могилевская</option>
 				</select>
-			</div>
-			<div class="town__city">
+			</form>
+			<form class="town__city">
 				<div class="town__text">Укажите город</div>
 				<select class="input__city" name="city" placeholder="">
 					<option value="Mozyr">Мозырь</option>
 					<option value="Mogilev">Могилев</option>
 				</select>
-			</div>
+			</form>
 		</div>
 		<div class="pay__title">Способ оплаты</div>
-		<div class="pay__choose">
+		<form class="pay__choose">
 			<div class="radio">
 				<input class="pay__input" type="radio" name="nal" id="answer1" value="cash">
 				<label class="radio__label" for="answer1">Наличными курьеру</label>
@@ -329,14 +329,14 @@
 				<input class="pay__input" type="radio" name="nal" id="answer3" value="payment">
 				<label class="radio__label" for="answer3">Банковский перевод</label>
 			</div>
-		</div>
+		</form>
 
 		<div class="service">
 			<div class="serv__two">
 				<div class="service__title">Дополнительные услуги</div>
 				<div class="service__img"><img src="./img/text/VV.png" alt="#"></div>
 			</div>
-			<div class="service__sel">
+			<form class="service__sel">
 				<div class="checkbox">
 					<input class="checkbox__input" type="checkbox" id="checkbox_1">
 					<label class="checkbox__label" for="checkbox_1">Вызов замерщика</label>
@@ -357,7 +357,7 @@
 					<input class="checkbox__input" type="checkbox" id="checkbox_5">
 					<label class="checkbox__label" for="checkbox_5">Крупногабаритные предметы</label>
 				</div>
-			</div>
+			</form>
 		</div>
 
 		<div class="clock">
@@ -365,8 +365,8 @@
 			<div class="clock__buttons">
 				<div><a href="#" class="clock__button">Заказать</a></div>
 				<div class="clock__shadow"></div>
-				<div class="clock__input"><input type="checkbox"><span class="clock__text">Даю согласие на обработку
-						данных</span></div>
+				<form class="clock__input"><input type="checkbox"><span class="clock__text">Даю согласие на обработку
+						данных</span></form>
 			</div>
 		</div>
 

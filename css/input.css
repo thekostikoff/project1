@@ -30,6 +30,7 @@
 .username,
 .telephone {
 	border: 0;
+	outline: 0;
 	width: 19rem;
 	font-weight: 500;
 	line-height: 1.25rem;
@@ -60,6 +61,7 @@
 .input__district,
 .input__city {
 	border: 0;
+	outline: 0;
 	padding-bottom: 1rem;
 	width: 19rem;
 	font-weight: 500;
@@ -252,4 +254,34 @@
 }
 .clock__input span {
 	padding-left: 0.6rem;
+}
+@media (max-width: 800px) {
+	.input {
+		margin: 0 2.5rem 3rem 0rem;
+	}
+	.input__title span {
+		display: none;
+	}
+	.input__title {
+		max-width: 25rem;
+		margin: 0 auto;
+	}
+	.input__text {
+		margin: 0 auto;
+	}
+	.clock__clock {
+		display: none;
+	}
+}
+@media (max-width: 720px) {
+	.user__tel {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.town,
+	.pay__title,
+	.pay__choose,
+	.service {
+		display: none;
+	}
 }
