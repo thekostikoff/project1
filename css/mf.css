@@ -1,0 +1,152 @@
+.maps {
+	margin-top: 2rem;
+}
+.map__text {
+	display: none;
+}
+footer {
+	background-color: var(--yellow);
+}
+.end {
+	padding: 6.25rem 0rem;
+	background-color: var(--yellow);
+}
+.end__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.end__logo {
+	margin-right: 13rem;
+}
+.end__img {
+	margin-bottom: 2.75rem;
+}
+.end__text-politic {
+	width: 12rem;
+	font-weight: 400;
+	line-height: 130.4%;
+	margin-bottom: 2.25rem;
+}
+.end__text-data {
+	font-weight: 400;
+	line-height: 1.25rem;
+	width: 15rem;
+}
+.end__item {
+	padding-right: 13rem;
+}
+.end__item-text {
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	padding-bottom: 1rem;
+}
+.end__button {
+	max-width: 15.6rem;
+	width: 100%;
+	padding: 0.75rem 2rem;
+	border: 1px solid var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 0.7rem;
+}
+.end__call {
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-decoration: underline;
+}
+.img__images {
+	display: flex;
+	flex-direction: row;
+	padding-top: 2rem;
+	gap: 3.6rem;
+}
+.end__button-span {
+	display: none;
+}
+@media (max-width: 1070px) {
+	.end__container {
+		padding: 0 2rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 830px) {
+	.map__text {
+		display: block;
+		padding: 0.75rem 0;
+		justify-content: center;
+		text-align: center;
+	}
+	.end__button {
+		display: none;
+	}
+	.end__button-span {
+		max-width: 22rem;
+		width: 100%;
+		padding: 0.75rem 2rem;
+		border: 1px solid var(--black);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0.7rem;
+	}
+	.end {
+		padding: 0;
+	}
+	.end__container {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		padding: 0;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.end__item {
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		padding-right: 0;
+		padding-top: 1rem;
+	}
+	.end__logo {
+		display: block;
+		margin-right: 0;
+		justify-content: center;
+	}
+	.end__img {
+		margin: 1rem 0;
+	}
+	.end__item {
+		display: block;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	.end__text-politic {
+		font-weight: 500;
+		max-width: 17.5rem;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+	.end__text-data {
+		font-weight: 500;
+		max-width: 25rem;
+	}
+	.img__images {
+		margin-bottom: 1rem;
+	}
+}
