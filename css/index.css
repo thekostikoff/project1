@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
+@import url(../css/mans.css);
+@import url(../css/mf.css);
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -62,6 +63,9 @@ a:hover {
 	font-weight: 500;
 	line-height: 1.5rem;
 	font-size: 1rem;
+}
+.header__link:hover {
+	color: #ff352b;
 }
 .banner__content {
 	display: flex;

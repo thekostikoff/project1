@@ -15,14 +15,14 @@
 </head>
 
 <body>
-	<section class="banner">
+	<section class="banner" id="head">
 		<header class="header">
 			<img src="./img/banner/logo.png" alt="">
 			<nav class="header__menu">
-				<a href="#" class="header__link">Цены</a>
-				<a href="#" class="header__link">Автопарк</a>
-				<a href="#" class="header__link">Отзывы</a>
-				<a href="#" class="header__link">Контакты</a>
+				<a href="#cost" class="header__link">Цены</a>
+				<a href="#auto" class="header__link">Автопарк</a>
+				<a href="#reviews" class="header__link">Отзывы</a>
+				<a href="#contact" class="header__link">Контакты</a>
 			</nav>
 			<a href="tel:8(029)-999-12-13" class="header__phone">8(029)-999-12-13</a>
 			<div class="header__burger"><span></span></div>
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="price">
+	<section class="price" id="cost">
 		<h2 class="price__title">Цены </h2>
 		<h3 class="price__subtitle">Фиксированная стоимость на переезд под ключ </h3>
 		<div class="price__columns">
@@ -134,7 +134,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="cars">
+	<section class="cars" id="auto">
 		<h2 class="cars__title">Автопарк</h2>
 		<h3 class="cars__subtitle">10 видов автомобилей от 800 кг до 10 тонн</h3>
 		<div class="cars__buttons">
@@ -188,7 +188,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="mans">
+	<section class="mans" id="reviews">
 		<div class="man__title">ОТЗЫВЫ</div>
 		<div class="mans__talk">
 
@@ -369,9 +369,47 @@
 						данных</span></form>
 			</div>
 		</div>
-
 	</section>
-
+	<section class="maps">
+		<div class="maps__google" style="width: 100%">
+			<iframe width="1920" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+				src="https://maps.google.com/maps?width=1920&amp;height=600&amp;hl=en&amp;q=Mogilev,%20kutepova%209+(Kostikov%20Dmitriy)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+			</iframe>
+		</div>
+		<div>
+			<p class="map__text">Брест</p>
+			<p class="map__text">8 (029)-999-12-13</p>
+			<p class="map__text">hello@movee.ru</p>
+		</div>
+	</section>
+	<footer class="end" id="contact">
+		<div class="end__container">
+			<div class="end__logo">
+				<img class="end__img" src="./img/banner/logo.png" alt="MOVEE">
+				<div class="end__text-politic">Политика
+					конфиденциальности</div>
+				<div class="end__text-data">Соглашение на обработку персональных данных</div>
+			</div>
+			<div class="end__item">
+				<a href="#head" class="end__item-text">Главная</a>
+				<a href="#cost" class="end__item-text">Цена</a>
+				<a href="#auto" class="end__item-text">Автопарк</a>
+				<a href="#reviews" class="end__item-text">Отзывы</a>
+				<a href="#contact" class="end__item-text">Контакты</a>
+			</div>
+			<div class="end__phone">
+				<div class="end__button"><a href="#" class="end__button-first">Обратный звонок</a></div>
+				<a href="tel:8(029)-999-12-13" class="end__call">8(029)-999-12-13</a>
+				<div class="img__images">
+					<a href="https://youtube.com/"><img src="./img/footer/youtube.png" alt="#"></a>
+					<a href="https://vk.com/"><img src="./img/footer/VK.png" alt="#"></a>
+					<a href="https://facebook.com/"><img src="./img/footer/meta.png" alt="#"></a>
+					<a href="https://instagram.com/"><img src="./img/footer/inst.png" alt="#"></a>
+				</div>
+				<div class="end__button-span"><a href="#" class="end__button-first">Обратный звонок</a></div>
+			</div>
+		</div>
+	</footer>
 
 
 </body>

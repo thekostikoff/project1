@@ -170,6 +170,7 @@
 	padding-left: 2rem;
 	font-size: 1rem;
 	color: #444;
+	cursor: pointer;
 }
 .checkbox__label:before {
 	content: "";
@@ -183,6 +184,7 @@
 	top: -5px;
 	left: 0;
 	z-index: 1;
+	cursor: pointer;
 }
 .checkbox__label:after {
 	content: "";
@@ -196,6 +198,7 @@
 	top: 0.2rem;
 	left: 0.5rem;
 	z-index: 2;
+	cursor: pointer;
 }
 .checkbox__input:checked + .checkbox__label:before {
 	background-color: #ffffff;
