@@ -150,6 +150,30 @@
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
+	cursor: pointer;
+}
+.service__img {
+	position: relative;
+	font-size: 2rem;
+	cursor: pointer;
+}
+.service__img::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-right: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	transform: rotate(-135deg);
+}
+.service__sel.hidden {
+	display: none;
+}
+.service__img.hidden {
+	padding-right: 1rem;
+	transform: rotate(180deg);
 }
 .service__sel {
 	display: flex;
