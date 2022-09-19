@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/baner.css">
 	<link rel="stylesheet" href="./css/input.css">
-	<link rel="stylesheet" href="./js/mine.js">
+	<script src='./js/mine.js'></script>
+
+
 	<title>MOVEE</title>
 
 </head>
@@ -138,53 +140,57 @@
 		<h2 class="cars__title">Автопарк</h2>
 		<h3 class="cars__subtitle">10 видов автомобилей от 800 кг до 10 тонн</h3>
 		<div class="cars__buttons">
-			<div class="cars__but"><a href="#"><span>Газели</span></a></div>
-			<div class="cars__but"><a href="#"><span>Каблуки</span></a></div>
-			<div class="cars__but"><a href="#"><span>Грузовики</span></a></div>
+			<div class="cars__but" id="cars__but" onclick="gaz()"><span>Газели</span></div>
+			<div class="cars__but" id="carstitle" onclick="cabl()"><span>Каблуки</span></div>
+			<div class="cars__but" id="cars__but" onclick="truck()"><span>Грузовики</span></div>
 		</div>
 		<div class="car__container">
-			<div class="img__left"><img src="./img/auto/Vector1.png" alt="#"> </div>
-			<div class="cars__cars">
-				<div class="cars__car">
-					<div class="car__text">
-						<p class="car__text-title">Каблук 2 метра <span>/0.8т</span> </p>
-						<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Ширина 1.8 м</p>
-						<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Высота 1.2 м</p>
-						<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Объем 8 м³</p>
-						<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Грузоподъемность 0.8 т
-						</p>
-						<div class="car__button"><a href="#" class="car__button-first"><span>Заказать</span></a></div>
-					</div>
-					<div class="car__img"><img src="./img/auto/car.png" alt="#"></div>
-				</div>
-
-				<div class="cars__car">
-					<div class="car__text">
-						<p class="car__text-title"> Газель 3 метра <span>/1.5т</span></p>
-						<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Ширина 2 м</p>
-						<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Высота 2 м</p>
-						<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Объем 16 м³</p>
-						<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Грузоподъемность 1,5 т</p>
-						<p class="car"><a href="#" class="car__button-first"><span>Заказать</span></a></p>
-					</div>
-					<div class="car__img"><img src="./img/auto/gaz.png" alt="#"></div>
-				</div>
-
-				<div class="cars__car">
-					<div class="car__text">
-						<div class="car__text-title">Грузовик 3 метра <span>/2т</span></div>
-						<div class="car__text-text"><img src="./img/auto/V.png" alt="#"> Ширина 3 м</div>
-						<div class="car__text-text"><img src="./img/auto/V.png" alt="#">Высота 3 м</div>
-						<div class="car__text-text"><img src="./img/auto/V.png" alt="#">Объем 20 м³</div>
-						<div class="car__text-text"><img src="./img/auto/V.png" alt="#">Грузоподъемность 2т</div>
-						<div class="car__button"><a href="#" class="car__button-first"><span>Заказать</span></a></div>
-					</div>
-					<div class="car__img"><img src="./img/auto/truck.png" alt="#"></div>
-				</div>
-
+			<div class="img__left"><img class="img__left" src="./img/auto/Vector1.png" alt="#">
 			</div>
-			<div class="img__right">
-				<img src="./img/auto/Vector2.png" alt="#">
+			<div class="slider">
+
+				<div class="cars__cars">
+
+					<div class="cars__car" id="carscar">
+						<div class="car__text">
+							<p class="car__text-title">Каблук 2 метра <span>/0.8т</span> </p>
+							<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Ширина 1.8 м</p>
+							<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Высота 1.2 м</p>
+							<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Объем 8 м³</p>
+							<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Грузоподъемность 0.8 т
+							</p>
+							<div class="car__button"><a href="#" class="car__button-first"><span>Заказать</span></a></div>
+						</div>
+						<div class="car__img"><img src="./img/auto/car.png" alt="#"></div>
+					</div>
+
+					<div class="cars__car" id="carscar">
+						<div class="car__text">
+							<p class="car__text-title"> Газель 3 метра <span>/1.5т</span></p>
+							<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Ширина 2 м</p>
+							<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Высота 2 м</p>
+							<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Объем 16 м³</p>
+							<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Грузоподъемность 1,5 т</p>
+							<p class="car__button"><a href="#" class="car__button-first"><span>Заказать</span></a></p>
+						</div>
+						<div class="car__img"><img src="./img/auto/gaz.png" alt="#"></div>
+					</div>
+
+					<div class="cars__car" id="carscar">
+						<div class="car__text">
+							<div class="car__text-title">Грузовик 3 метра <span>/2т</span></div>
+							<div class="car__text-text"><img src="./img/auto/V.png" alt="#"> Ширина 3 м</div>
+							<div class="car__text-text"><img src="./img/auto/V.png" alt="#">Высота 3 м</div>
+							<div class="car__text-text"><img src="./img/auto/V.png" alt="#">Объем 20 м³</div>
+							<div class="car__text-text"><img src="./img/auto/V.png" alt="#">Грузоподъемность 2т</div>
+							<div class="car__button"><a href="#" class="car__button-first"><span>Заказать</span></a></div>
+						</div>
+						<div class="car__img"><img src="./img/auto/truck.png" alt="#"></div>
+					</div>
+
+				</div>
+				<div class="img__right"><img class="img__right" src="./img/auto/Vector2.png" alt="#">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -218,11 +224,13 @@
 						</div>
 					</div>
 				</div>
-				<p class="speech__text">Обращение к вам за помощью в переезде оставило только положительные впечатления.
+				<p class="speech__text">Обращение к вам за помощью в переезде оставило только положительные
+					впечатления.
 					Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
 					во двор, он проявил себя как компетентный
-					и профессиональный сотрудник, за что ему огромное... </p>
-				<span class="mans__span">Читать полностью</span>
+					и профессиональный сотрудник, за что ему огромное<span class="speech__dots" id="dots">...</span><span
+						class="speech__more" id="more"> спасибо.Хороший человек</span> </p>
+				<span class="mans__span " id="spanclick" onclick="showText()">Читать полностью</span>
 			</div>
 
 			<div class="man__speech">
@@ -250,11 +258,12 @@
 					нам
 					опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на
 					час). Водитель заранее позвонил, предупредил, что задерживается.
-					Когда.... </p>
-				<span class="mans__span">Читать полностью</span>
+					Когда<span id="dotstwo">...</span> <span class="speech__more" id="moretwo"> он приехал, все были
+						довольны</span> </p>
+				<span class="mans__span" id="spanclicktwo" onclick="showTexttwo()">Читать полностью</span>
 			</div>
 
-			<div class="man__speech">
+			<div class=" man__speech">
 				<div class="man__speech-name">Ольга Петрова</div>
 				<div class="man__speech-datarating">
 					<div class="speech__data">11.11.2019</div>
@@ -280,15 +289,19 @@
 						</div>
 					</div>
 				</div>
-				<p class="speech__text">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы,
+				<p class="speech__text" id="paragraph">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены
+					фиксированы,
 					что упрощает расчет. Безо всяких заморочек,
-					в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особая
+					в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности.
+					Особая
 					благодарность
-					Александру за его... </p>
-				<span class="mans__span">Читать полностью</span>
+					Александру за его<span id="dotsthree">...</span> <span class="speech__more" id="morethree">надежность и
+						уверенность в JS </span> </p>
+				<span class="mans__span" id="spanclickthree" onclick="showTextthree()">Читать полностью</span>
 			</div>
 		</div>
-		<div class="mans__button"><a href="#" class="mans__button-first">Все отзывы</a></div>
+		<div class=" mans__button"><a href="#" class="mans__button-first">Все отзывы</a>
+		</div>
 	</section>
 	<section class="input">
 		<div class="input__title">Закажи переезд прямо сейчас<span> со скидкой %</span></div>
@@ -333,10 +346,11 @@
 
 		<div class="service">
 			<div class="serv__two">
-				<div class="service__title">Дополнительные услуги</div>
-				<div class="service__img"><img src="./img/text/VV.png" alt="#"></div>
+				<div class="service__title" id="serv" onclick="first()">Дополнительные услуги</div>
+				<div class="service__img" id="first" onclick="first()"></div>
+
 			</div>
-			<form class="service__sel">
+			<form class=" service__sel" id="second_hide">
 				<div class="checkbox">
 					<input class="checkbox__input" type="checkbox" id="checkbox_1">
 					<label class="checkbox__label" for="checkbox_1">Вызов замерщика</label>
@@ -410,7 +424,7 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src='./js/service.js'></script>
 
 </body>
 

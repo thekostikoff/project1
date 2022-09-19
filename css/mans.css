@@ -95,6 +95,9 @@
 .mans__span:hover {
 	cursor: pointer;
 }
+.speech__more {
+	display: none;
+}
 .mans__button {
 	max-width: 15.6rem;
 	width: 100%;

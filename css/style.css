@@ -118,6 +118,8 @@ h2 {
 }
 .price__column:hover {
 	border: 1px solid var(--yellow);
+	box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+	transition: 0.5s;
 }
 .price__column:hover .price__column-title,
 .price__column:hover .price__column-info {
