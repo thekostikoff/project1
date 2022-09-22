@@ -95,8 +95,43 @@
 .mans__span:hover {
 	cursor: pointer;
 }
+.mans__spans {
+	display: none;
+}
 .speech__more {
 	display: none;
+}
+.speech__more.hd {
+	display: block;
+}
+.speech__dots.hd {
+	display: none;
+}
+.mans__span.hd {
+	display: none;
+}
+.mans__spans.hd {
+	display: block;
+	padding-top: 1rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	text-decoration: underline;
+}
+.speech__more.op {
+	display: none;
+}
+.speech__dots.op {
+	display: block;
+}
+.mans__spans.op {
+	display: none;
+}
+.mans__span.op {
+	display: block;
+	padding-top: 1rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	text-decoration: underline;
 }
 .mans__button {
 	max-width: 15.6rem;
