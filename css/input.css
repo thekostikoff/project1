@@ -238,7 +238,7 @@
 	justify-content: center;
 	gap: 5rem;
 }
-.clock__clock {
+.clocks {
 	color: black;
 	margin-top: 3rem;
 	font-weight: 400;
