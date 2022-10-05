@@ -1,9 +1,6 @@
 let offset = 0;
 const carscars = document.querySelector('.cars__cars');
 const carsbut = document.querySelectorAll('.cars__but');
-// const gaz = document.querySelectorAll('gaz');
-// const cabl = document.querySelectorAll('cabl');
-// const truck = document.querySelectorAll('truck');
 
 document.querySelector('.img__left').addEventListener('click', function () {
 	offset = offset + 1029;

@@ -12,6 +12,5 @@ const open = (e) => {
 			links[i].classList.toggle('hd');
 		}
 	}
-	console.log(e.target)
 }
 talk.addEventListener('click', open)

@@ -16,18 +16,20 @@
 
 </head>
 
-<body>
+<body id="body">
 	<section class="banner" id="head">
 		<header class="header">
 			<img src="./img/banner/logo.png" alt="">
-			<nav class="header__menu">
-				<a href="#cost" class="header__link">Цены</a>
-				<a href="#auto" class="header__link">Автопарк</a>
-				<a href="#reviews" class="header__link">Отзывы</a>
-				<a href="#contact" class="header__link">Контакты</a>
+			<nav class="header__menu" id="menu">
+				<a href="#head" id="link" class="header__link">Главная</a>
+				<a href="#cost" class="header__link" id="link">Цены</a>
+				<a href="#auto" class="header__link" id="link">Автопарк</a>
+				<a href="#reviews" class="header__link" id="link">Отзывы</a>
+				<a href="#contact" class="header__link" id="link">Контакты</a>
+				<a href="#tel" class="header__link" id="link">8(029)-999-12-13</a>
 			</nav>
 			<a href="tel:8(029)-999-12-13" class="header__phone">8(029)-999-12-13</a>
-			<div class="header__burger"><span></span></div>
+			<div class="header__burger" id="burger"><span></span></div>
 		</header>
 		<div class="banner__content">
 			<div class="banner__info">
@@ -425,6 +427,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src='./js/burger.js'></script>
 	<script src='./js/clock.js'></script>
 	<script src='./js/mine.js'></script>
 	<script src='./js/service.js'></script>
