@@ -1,11 +1,8 @@
 const vkontakte = document.querySelector('.vk');
 const meta = document.querySelector('.facebook');
 
-const pageUrl = location.href
-const message = 'This is an awesome article, take 5 minutes to read it'
-
-const vkAPI = `https://vk.com/share.php?url=${pageUrl}. ${message} `;
-const metaAPI = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse`;
+const vkAPI = `https://vk.com/share.php?url=https://thekostikoff.github.io/project1/ `;
+const metaAPI = `https://www.facebook.com/sharer/sharer.php?u=https://thekostikoff.github.io/project1/`;
 
 vkontakte.addEventListener('click', () => {
 	window.open(url = vkAPI)
