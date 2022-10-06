@@ -292,11 +292,11 @@ a:hover {
 	.banner__title {
 		font-size: 2rem;
 	}
-	.banner__button {
+	/* .banner__button {
 		padding: 1rem 5rem;
 		width: 17rem;
 	}
 	.banner__shadow {
 		width: 17rem;
-	}
+	} */
 }
