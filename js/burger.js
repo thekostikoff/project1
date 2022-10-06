@@ -8,3 +8,4 @@ function read() {
 document.getElementById('burger').addEventListener('click', () => read());
 document.getElementById('menu').addEventListener('click', () => read());
 document.getElementById('link').addEventListener('click', () => read());
+
