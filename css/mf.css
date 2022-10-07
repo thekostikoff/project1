@@ -93,6 +93,13 @@ footer {
 .end__button-span {
 	display: none;
 }
+.soc__but {
+	margin: 0.1rem;
+	font-size: 2rem;
+}
+.soc__but:hover {
+	transform: scale(1.3);
+}
 @media (max-width: 1070px) {
 	.end__container {
 		padding: 0 2rem;

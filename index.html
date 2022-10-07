@@ -9,25 +9,27 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/baner.css">
 	<link rel="stylesheet" href="./css/input.css">
-	<script src='./js/mine.js'></script>
+
 
 
 	<title>MOVEE</title>
 
 </head>
 
-<body>
+<body id="body">
 	<section class="banner" id="head">
 		<header class="header">
 			<img src="./img/banner/logo.png" alt="">
-			<nav class="header__menu">
-				<a href="#cost" class="header__link">Цены</a>
-				<a href="#auto" class="header__link">Автопарк</a>
-				<a href="#reviews" class="header__link">Отзывы</a>
-				<a href="#contact" class="header__link">Контакты</a>
+			<nav class="header__menu" id="menu">
+				<a href="#head" id="link" class="header__link">Главная</a>
+				<a href="#cost" class="header__link" id="link">Цены</a>
+				<a href="#auto" class="header__link" id="link">Автопарк</a>
+				<a href="#reviews" class="header__link" id="link">Отзывы</a>
+				<a href="#contact" class="header__link" id="link">Контакты</a>
+				<a href="#tel" class="header__link" id="link">8(029)-999-12-13</a>
 			</nav>
 			<a href="tel:8(029)-999-12-13" class="header__phone">8(029)-999-12-13</a>
-			<div class="header__burger"><span></span></div>
+			<div class="header__burger" id="burger"><span></span></div>
 		</header>
 		<div class="banner__content">
 			<div class="banner__info">
@@ -139,19 +141,19 @@
 	<section class="cars" id="auto">
 		<h2 class="cars__title">Автопарк</h2>
 		<h3 class="cars__subtitle">10 видов автомобилей от 800 кг до 10 тонн</h3>
-		<div class="cars__buttons">
-			<div class="cars__but" id="cars__but" onclick="gaz()"><span>Газели</span></div>
-			<div class="cars__but" id="carstitle" onclick="cabl()"><span>Каблуки</span></div>
-			<div class="cars__but" id="cars__but" onclick="truck()"><span>Грузовики</span></div>
+		<div class="cars__buttons" id="cars__buttons">
+			<div class="cars__but" id="gaz"><span>Газели</span></div>
+			<div class=" cars__but" id="cabl"><span>Каблуки</span></div>
+			<div class=" cars__but" id="truck"><span>Грузовики</span></div>
 		</div>
-		<div class="car__container">
+		<div class=" car__container">
 			<div class="img__left"><img class="img__left" src="./img/auto/Vector1.png" alt="#">
 			</div>
 			<div class="slider">
 
 				<div class="cars__cars">
 
-					<div class="cars__car" id="carscar">
+					<div class="cars__car">
 						<div class="car__text">
 							<p class="car__text-title">Каблук 2 метра <span>/0.8т</span> </p>
 							<p class="car__text-text"> <img src="./img/auto/V.png" alt="#"> Ширина 1.8 м</p>
@@ -164,7 +166,7 @@
 						<div class="car__img"><img src="./img/auto/car.png" alt="#"></div>
 					</div>
 
-					<div class="cars__car" id="carscar">
+					<div class="cars__car">
 						<div class="car__text">
 							<p class="car__text-title"> Газель 3 метра <span>/1.5т</span></p>
 							<p class="car__text-text"><img src="./img/auto/V.png" alt="#">Ширина 2 м</p>
@@ -176,7 +178,7 @@
 						<div class="car__img"><img src="./img/auto/gaz.png" alt="#"></div>
 					</div>
 
-					<div class="cars__car" id="carscar">
+					<div class="cars__car">
 						<div class="car__text">
 							<div class="car__text-title">Грузовик 3 метра <span>/2т</span></div>
 							<div class="car__text-text"><img src="./img/auto/V.png" alt="#"> Ширина 3 м</div>
@@ -198,7 +200,7 @@
 		<div class="man__title">ОТЗЫВЫ</div>
 		<div class="mans__talk">
 
-			<div class="man__speech">
+			<div class="man__speech" id="man__speech">
 				<div class="man__speech-name">Ирина</div>
 				<div class="man__speech-datarating">
 					<div class="speech__data">24.03.2019</div>
@@ -228,9 +230,9 @@
 					впечатления.
 					Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
 					во двор, он проявил себя как компетентный
-					и профессиональный сотрудник, за что ему огромное<span class="speech__dots" id="dots">...</span><span
-						class="speech__more" id="more"> спасибо.Хороший человек</span> </p>
-				<span class="mans__span " id="spanclick" onclick="showText()">Читать полностью</span>
+					и профессиональный сотрудник, за что ему огромное<span class="speech__dots">...</span><span
+						class="speech__more"> спасибо.Хороший человек</span> </p>
+				<span class="mans__span">Читать полностью</span><span class="mans__spans">Скрыть</span>
 			</div>
 
 			<div class="man__speech">
@@ -258,9 +260,9 @@
 					нам
 					опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на
 					час). Водитель заранее позвонил, предупредил, что задерживается.
-					Когда<span id="dotstwo">...</span> <span class="speech__more" id="moretwo"> он приехал, все были
+					Когда<span class="speech__dots">...</span> <span class="speech__more"> он приехал, все были
 						довольны</span> </p>
-				<span class="mans__span" id="spanclicktwo" onclick="showTexttwo()">Читать полностью</span>
+				<span class="mans__span">Читать полностью</span><span class="mans__spans">Скрыть</span>
 			</div>
 
 			<div class=" man__speech">
@@ -295,10 +297,11 @@
 					в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности.
 					Особая
 					благодарность
-					Александру за его<span id="dotsthree">...</span> <span class="speech__more" id="morethree">надежность и
+					Александру за его<span class="speech__dots">...</span> <span class="speech__more">надежность и
 						уверенность в JS </span> </p>
-				<span class="mans__span" id="spanclickthree" onclick="showTextthree()">Читать полностью</span>
+				<span class="mans__span">Читать полностью</span><span class="mans__spans">Скрыть</span>
 			</div>
+
 		</div>
 		<div class=" mans__button"><a href="#" class="mans__button-first">Все отзывы</a>
 		</div>
@@ -346,8 +349,8 @@
 
 		<div class="service">
 			<div class="serv__two">
-				<div class="service__title" id="serv" onclick="first()">Дополнительные услуги</div>
-				<div class="service__img" id="first" onclick="first()"></div>
+				<div class="service__title" id="serv">Дополнительные услуги</div>
+				<div class="service__img" id="first"></div>
 
 			</div>
 			<form class=" service__sel" id="second_hide">
@@ -375,7 +378,7 @@
 		</div>
 
 		<div class="clock">
-			<div class="clock__clock" id="clocks">05:37:25</div>
+			<div class="clocks" id="clocks"></div>
 			<div class="clock__buttons">
 				<div><a href="#" class="clock__button">Заказать</a></div>
 				<div class="clock__shadow"></div>
@@ -415,16 +418,21 @@
 				<div class="end__button"><a href="#" class="end__button-first">Обратный звонок</a></div>
 				<a href="tel:8(029)-999-12-13" class="end__call">8(029)-999-12-13</a>
 				<div class="img__images">
-					<a href="https://youtube.com/"><img src="./img/footer/youtube.png" alt="#"></a>
-					<a href="https://vk.com/"><img src="./img/footer/VK.png" alt="#"></a>
-					<a href="https://facebook.com/"><img src="./img/footer/meta.png" alt="#"></a>
-					<a href="https://instagram.com/"><img src="./img/footer/inst.png" alt="#"></a>
+					<span class="soc__but youtube"> <i class=" fa fa-youtube"></i></span>
+					<span class="soc__but vk"> <i class="fa fa-vk"></i></span>
+					<span class="soc__but facebook"> <i class="fa fa-facebook"></i></span>
+					<span class="soc__but instagram"> <i class="fa fa-instagram"></i></span>
 				</div>
 				<div class="end__button-span"><a href="#" class="end__button-first">Обратный звонок</a></div>
 			</div>
 		</div>
 	</footer>
+	<script src='./js/burger.js'></script>
+	<script src='./js/clock.js'></script>
+	<script src='./js/mine.js'></script>
 	<script src='./js/service.js'></script>
+	<script src='./js/socbuttons.js'></script>
+	<script src="http://use.fontawesome.com/8e7c028ecd.js"></script>
 
 </body>
 

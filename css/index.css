@@ -44,8 +44,28 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+.header img {
+	display: block;
+	position: relative;
+	z-index: 8;
+	max-width: 100%;
+}
+.header:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--);
+	z-index: 3;
 }
 .header__menu {
+	position: relative;
+	z-index: 4;
 	display: flex;
 	gap: 2rem;
 }
@@ -63,6 +83,12 @@ a:hover {
 	font-weight: 500;
 	line-height: 1.5rem;
 	font-size: 1rem;
+}
+.header__link:first-child {
+	display: none;
+}
+.header__link:last-child {
+	display: none;
 }
 .header__link:hover {
 	color: #ff352b;
@@ -162,21 +188,38 @@ a:hover {
 	}
 }
 @media (max-width: 750px) {
+	.header__link:first-child {
+		display: block;
+	}
+	.header__link:last-child {
+		display: block;
+		text-decoration: underline;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	.header__link:hover {
+		color: white;
+		background-color: #000;
+		}
 	.header__burger {
 		display: block;
 		position: relative;
 		width: 2rem;
 		height: 1.25rem;
 		position: relative;
+		z-index: 5;
 	}
 	.header__burger span {
 		position: absolute;
+		z-index: 10;
 		background-color: var(--black);
 		position: absolute;
 		left: 0;
 		width: 100%;
 		height: 2px;
 		top: 9px;
+		transition: all 0.3s ease 0s;
 	}
 	.header__burger:before,
 	.header__burger:after {
@@ -186,6 +229,9 @@ a:hover {
 		width: 100%;
 		height: 2px;
 		left: 0;
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		z-index: 5;
 	}
 	.header__burger:before {
 		top: 0;
@@ -193,7 +239,43 @@ a:hover {
 	.header__burger:after {
 		bottom: 0;
 	}
-	.header__menu,
+	.header__burger.active:before {
+		width: 80%;
+		transform:rotate(45deg);
+		top: -1px;
+	}
+	.header__burger.active:after {
+		width: 80%;
+		transform:rotate(-45deg);
+	}
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.header__menu {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		position: fixed;
+		z-index: 5;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 6.25rem 0 0 0rem;
+			
+	}
+	.header__menu.active {
+		top: 0;
+		left: 33rem;
+		background-color: var(--white);
+		height: 100%;
+		width: 15rem;
+		border-radius: 2rem;
+		align-items: center;
+	}
+	.header__link:hover {
+		
+		}
 	.header__phone {
 		display: none;
 	}
@@ -203,10 +285,12 @@ a:hover {
 	.banner__info {
 		width: 100%;
 	}
+	.banner__title {
+		font-size: 2rem;
 }
 @media (max-width: 365px) {
 	.banner__title {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	.banner__button {
 		padding: 1rem 5rem;
